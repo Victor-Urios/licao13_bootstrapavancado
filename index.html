@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/index.css">
+    <title>Document</title>
+    <style>
+        .container nav  {
+            display:flex;
+            text-align: center;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <header id="header-id">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="cabecalho">
+                <h1>
+                    Loja de plushies
+                </h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Comente!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quem-somos">Quem Somos</a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+    </div>
+</div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#header-id">
+        <section id="inicio"> 
+    <!-- sistema de carousel sem precisar do outro plugin de JS, apenas usando o bootstrap -->
+    <div id="carrousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- data inverval serve pra dar uma freiada na velocidade dos slides -->
+            <div data-bs-interval="5000" class="carousel-item active">
+                <img class="d-block w-100" src="./images/Serperior.png" alt="">
+        </div>
+        <div data-bs-interval="5000" class="carousel-item">
+            <img class="d-block w-100" src="./images/Floragato.png" alt="">
+        </div>
+        <div data-bs-interval="5000" class="carousel-item">
+            <img class="d-block w-100" src="./images/Absol.png" alt="">
+            <!-- <div class="carousel-caption">
+                <h2>Foto de uma pelucia de um absol</h2>
+            </div> -->
+        </div>
+    </div>
+</div>
+</section>
+    <button data-bs-target="#carrousel" data-bs-slide="prev" class="carousel-control-prev" type="button">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button data-bs-target="#carrousel" data-bs-slide="next" class="carousel-control-next" type="button">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+    <div class="container">
+        <section class="cards">
+        <div id="produtos" class="row">
+            <div class="col-12 col-md-6 col-lg-4 custom col">
+                <div class="card text-bg-dark">
+                    <!-- <div class="card-header">
+                        cabeçalho do header
+                    </div> -->
+                    <img src="./images/Absol.png" alt="Absol"> 
+                    <div class="card-body">  <!-- corpo do  card ela tem um padding aplicado-->
+                        <h4 class="card-title">Plush Absol</h4>
+                        <h5 class="card-subtitle">R$ 99,99</h5>
+                        <p class="card-text">
+                            Um Cãozinho de uma meia lua para te lembrar que as noites de meia lua, lembram uma banana.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-primary" title="Compre Já!"></a>>Botão link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 custom col">
+                <div class="card text-bg-dark"> <!-- Darkmode pro texto-->
+                    <img src="./images/Floragato.png" alt="Floragato"> 
+                    <div class="card-body">  <!-- corpo do  card ela tem um padding aplicado-->
+                        <h4 class="card-title">Plush Floragato</h4>
+                        <h5 class="card-subtitle">R$ 99,99</h5>
+                        <p class="card-text">
+                            Pra quem quer um gatinho mas não tem condições de criar um, eis um plush de um floragato!
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-primary" title="Compre Já!">Botão link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 custom col">
+                <div class="card text-bg-dark"> <!-- Darkmode pro texto-->
+                    <img src="./images/Gardevoir.png" alt="Gardevoir"> 
+                    <div class="card-body">  <!-- corpo do  card ela tem um padding aplicado-->
+                        <h4 class="card-title">Plush Gardevoir</h4>
+                        <h5 class="card-subtitle">R$ 99,99</h5>
+                        <p class="card-text">
+                            Uma gardevoir alegre para fazer companhia no dia a dia!
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-primary" title="Compre Já!">Botão link</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 custom col">
+            <div class="card text-bg-dark">
+                <img src="./images/lucario.png" alt="lucario"> 
+                <div class="card-body">  <!-- corpo do  card ela tem um padding aplicado-->
+                    <h4 class="card-title">Plush Lucario</h4>
+                    <h5 class="card-subtitle">R$ 99,99</h5>
+                    <p class="card-text">
+                        Um pequeno e fofo Chacalzinho para te dar companhia!
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-primary" title="Compre Já!">Botão link</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 custom col">
+            <div class="card text-bg-dark"> <!-- Darkmode pro texto-->
+                <img src="./images/Mimikyu.png" alt="Mimikyu"> 
+                <div class="card-body">  <!-- corpo do  card ela tem um padding aplicado-->
+                    <h4 class="card-title">Plush Mimikyu</h4>
+                    <h5 class="card-subtitle">R$ 99,99</h5>
+                    <p class="card-text">
+                        Um pequeno e fofo fantasminha camarada para aconchegar suas noites!
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-primary" title="Compre Já!">Botão link</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 custom col">
+            <div class="card text-bg-dark"> <!-- Darkmode pro texto-->
+                <img src="./images/Serperior.png" alt="Serperior"> 
+                <div class="card-body">  <!-- corpo do  card ela tem um padding aplicado-->
+                    <h4 class="card-title">Plush Serperior</h4>
+                    <h5 class="card-subtitle">R$ 149,99</h5>
+                    <p class="card-text">
+                        Uma enorme plush de uma Serperior para você poder abraça-la e dormir num sono profundo!
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-primary" title="Compre Já!">Botão link</a>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+</section>
+
+
+<div class="container">
+    <section id="contato">
+        <h2>Entre em contato</h2>
+        <form>
+            <div class="form-campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div class="form-campo">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+            <div class="form-campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" id="campo" name="campo"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</div>
+
+<div class="container">
+    <footer id="quem-somos" class="footer py-5">
+        <div class="rodape"> 
+            <div class="row">
+            <div class="col-md-4">
+                <h5>
+                    Victor
+                </h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reprehenderit recusandae quis quidem obcaecati illum eos nam ipsa facere illo repellat hic quia alias soluta natus sequi tempore, ullam quos.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h5>Fast travel</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio" class="text-liht">Início</a></li>
+                        <li><a href="#produtos" class="text-liht">Produtos</a></li>
+                        <li><a href="#contato" class="text-liht">Contato</a></li>
+                    </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contato</h5>
+                <p>Email:
+                    <a href="mailto:victor@contato.com" title="Email Novo!" >victor@contato.com</a>
+                </p>
+                <p>Telefone:
+                    <a href="https://www.youtube.com/watch?v=eUGtRA9McuU" title="Telefone novo!">Telefone</a>
+                </p>
+            </div>
+</div>
+</div>
+<div class="text-center mt-4">
+    <p class="mb-0">© 2025 Victor Urios. Todos os direitos reservados.</p>
+</div>
+    </footer>
+</div>
+</div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
